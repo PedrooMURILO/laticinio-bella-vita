@@ -1,6 +1,7 @@
 /* Layout */
-html, body, .home {
+html, body, #home {
     height: 100%;
+    background: #f7f0f5;
 }
 
 body {
@@ -8,23 +9,27 @@ body {
 }
 
 /* Barra de Navegação */
-nav.navbar-transparente {
-    padding: 15px 0;
-    background: rgba(0, 0, 0, 0.6);
+header {
+    margin-bottom: 80px;
 }
 
-.navbar-light .navbar-nav .nav-link{
+nav.navbar-transparente {
+    padding: 15px 0;
+    background: rgba(109, 163, 77, 0.9);
+}
+
+.navbar-light .navbar-nav {
+    & .nav-link{
     color: white;
 }
 
-.navbar-light .navbar-nav .nav-link:hover{
-    background: white;
-    border-radius: 5px;
-    color: black;
+    & .nav-link:hover{
+        color: #17301C;
+    }
 }
 
 .navbar-light .navbar-toggler{
-    color: rgba(0, 0, 0, .5);
+    background: rgba(109, 163, 77, 0.9);
     border-color: rgba(255, 255, 255, .5);
 }
 
@@ -34,50 +39,45 @@ nav.navbar-transparente {
     margin: 12px 15px;
 }
 
-.navbar h2{
-    color: white;
-    font-size: 1.9em;
-    padding: 8px;
+.navbar {
+    & h2 {
+        color: white;
+        font-size: 1.9em;
+        padding: 8px;
+    }
+
+    h2:hover{
+        color: #17301C;
+    }
 }
 
-.navbar h2:hover{
-    background: white;
-    border-radius: 10px;
-    color: black;
-}
-
-/* Página Home */
+/* capa */
 
 .capa {
     text-align: center;
 }
 
+/* Botões Carousel */
+
 .btn-custom {
-    color: rgb(0, 0, 0);
+    color: white;
     border-radius: 500px;
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
-    padding: 10px 20px;
+    padding: 13px 24px;
 }
 
 .btn-oppacity {
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.btn-oppacity:hover {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(109, 163, 77, 0.9);
     color: white;
 }
 
-/* Estrutura de Conteúdos */
-.caixa { 
-    padding-top: 20px;
-    padding-bottom: 20px;
+.btn-oppacity:hover {
+    background: rgba(109, 163, 77, 0.9);
+    color: #17301C;
 }
 
-
-
-
+/* Estrutura de Conteúdos */
 
 #equipe {
     & img {
@@ -86,11 +86,6 @@ nav.navbar-transparente {
         width: 150px;
         height: 150px;
     }
-}
-
-/* Imagens */
-.imghistory {
-    border: solid 2px black;
 }
 
 /* Tipografia */
@@ -113,16 +108,14 @@ h3 {
     letter-spacing: -0.04em;
 }
 
+p {
+    font-size: 1.3em;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .btn-custom {
-        margin: 10px 15px;
-    }
-    .imghistory {
-        width: 350px;
-    }
-    p {
-        font-size: 1.2em;
+        margin: 10px 0;
     }
     h1 {
         font-size: 1.5em;
@@ -134,12 +127,8 @@ h3 {
     h1 {
         font-size: 2em;
     }
-
     .btn-custom {
         margin: 10px 15px;
-    }
-    p {
-        font-size: 1.3em;
     }
 }
 
@@ -173,36 +162,60 @@ h3 {
 }
 
 
-/* Rodapé 
+/* Rodapé */
 footer {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 50px 0px 20px 0px;
+    background: rgba(109, 163, 77, 0.9);
+    padding: 50px 0px 25px 0px;
     position: relative;
+
+    & h4 {
+        color: white;
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+
+    & .navbar-nav a {
+        color: white;
+    }
+    
+    & .navbar-nav a:hover {
+        color: #17301C;;
+        text-decoration: none;
+    }
+    
+    & ul {
+        list-style: none;
+    }
+    
+    & ul li {
+        color: white;
+        float: right;
+        margin: 0 5px;
+        font-size: 0.8em;
+    }
+
+    & i {
+        font-size: 2rem; 
+        color: white;
+    }
+
+    & i:hover{
+        color: #17301C;
+    }
 }
 
-footer h4 {
-    color: white;
-    font-size: 0.8em;
-    text-transform: uppercase;
+/* Formulário */
+input {
+    margin: 7px 0;
 }
 
-footer .navbar-nav a {
-    color: white;
-    font-size: 0.8em;
-}
+/* Imamgem queijo */
+.queijo {
+    & img {
+        border-radius: 20px;
+    }
 
-footer .navbar-nav a:hover {
-    color: #9bf0e1;
-    text-decoration: none;
-    font-size: 0.8em;
+    & p {
+        font-size: 1.7em;
+    }
 }
-
-footer ul {
-    list-style: none;
-}
-
-footer ul li {
-    float: right;
-    margin: 0 5px;
-}
-*/
