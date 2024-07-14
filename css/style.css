@@ -1,7 +1,7 @@
 /* Layout */
 html, body, #home {
     height: 100%;
-    background: #f7f0f5;
+    background: #ffffff;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 
 /* Barra de Navegação */
 header {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 
 nav.navbar-transparente {
@@ -73,7 +73,7 @@ nav.navbar-transparente {
 }
 
 .btn-oppacity:hover {
-    background: rgba(109, 163, 77, 0.9);
+    background: rgba(108, 163, 77, 0.9);
     color: #17301C;
 }
 
@@ -93,42 +93,55 @@ h1 {
     font-weight: 900;
     letter-spacing: -0.05em;
     margin-bottom: 50px;
-    color: black;
+    color: #6ca34d;
 }
 
 h2 {
     font-size: 3em;
     font-weight: 700;
     letter-spacing: -0.04em;
+    color: #6ca34d;
 }
 
 h3 {
     font-size: 2em;
     font-weight: 700;
     letter-spacing: -0.04em;
+    color: #6ca34d;
 }
 
-p {
-    font-size: 1.3em;
+/* Produto */
+.queijo {
+    & img {
+        border-radius: 20px;
+        width: 100%;
+        margin: 8px 0;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .btn-custom {
-        margin: 10px 0;
-    }
     h1 {
-        font-size: 1.5em;
+        font-size: 2.5em;
+    }
+
+    .queijo {
+        & p {
+            font-size: 1.2em;
+        }
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
-    .btn-custom {
-        margin: 10px 15px;
+
+    .queijo {
+        & p {
+            font-size: 1.4em;
+        }
     }
 }
 
@@ -137,8 +150,15 @@ p {
     h1 {
         font-size: 3.5em;
     }
+
     p {
-        font-size: 1.6em;
+        font-size: 1.1em;
+    }
+
+    .queijo {
+        & p {
+            font-size: 1.6em;
+        }
     }
 }
 
@@ -147,12 +167,32 @@ p {
     h1 {
         font-size: 4em;
     }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    .queijo {
+        & p {
+            font-size: 1.7em;
+        }
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     h1 {
         font-size: 4.5em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    .queijo {
+        & p {
+            font-size: 2em;
+        }
     }
 }
 
@@ -207,15 +247,4 @@ footer {
 /* Formulário */
 input {
     margin: 7px 0;
-}
-
-/* Imamgem queijo */
-.queijo {
-    & img {
-        border-radius: 20px;
-    }
-
-    & p {
-        font-size: 1.7em;
-    }
 }
