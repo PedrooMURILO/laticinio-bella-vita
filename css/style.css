@@ -110,14 +110,12 @@ h3 {
     color: #6ca34d;
 }
 
-/* Produto */
-.queijo {
-    & img {
+/* Imagens */
+img {
         border-radius: 20px;
         width: 100%;
         margin: 8px 0;
     }
-}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
